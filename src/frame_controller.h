@@ -10,7 +10,9 @@ private:
 	float _timeCount;
 	float _frameRate;
 	float _frameStartTime;
+
 public:
+	float targetFrameRate;
 	const int& frameCount = _frameCount;
 	const float& deltaTime = _deltaTime;
 	const float& timeCount = _timeCount;
