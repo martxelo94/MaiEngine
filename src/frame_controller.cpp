@@ -11,7 +11,7 @@ void FrameController::init(){
 }
 
 void FrameController::start_frame(){
-	_frameStartTime = 
+	_frameStartTime 
 }
 
 void FrameController::end_frame(){
