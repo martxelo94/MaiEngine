@@ -6,7 +6,7 @@
 class FrameController {
 private:
 	int _frameCount;
-	float _deltaTime;
+	float _frameTime;
 	float _timeCount;
 	float _frameRate;
 	float _frameStartTime;
@@ -14,7 +14,7 @@ private:
 public:
 	float targetFrameRate;
 	const int& frameCount = _frameCount;
-	const float& deltaTime = _deltaTime;
+	const float& frameTime = _frameTime;
 	const float& timeCount = _timeCount;
 	const float& frameRate = _frameRate;
 

@@ -3,25 +3,23 @@
 
 #include "frame_controller.h"
 
-void Foo();
-void Foo();
-
-int variable;
 
 int main() {
-	int frames = 0;
 	bool run = true;
-	std::string input;
 
-	fc._time = 0.0;
-	
-	Foo();
+	fc.init();
+	fc.targetFrameRate = 60;
+
 	while (run) {
-		std::cout << frames++ << std::endl;
-		std::cin >> input;
-		run = input != "0";
+		fc.start_frame();
+
+		// AQUI OCURRE TODO
+		std::cout << "Hola" << std::endl;
+		std::cout << fc.frameTime << std::endl;
+		std::cout << fc.frameRate << std::endl;
+
+		fc.end_frame();
 	}
 
 	return 0;
 }
-void Foo() {}
